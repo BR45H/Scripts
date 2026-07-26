@@ -2,8 +2,8 @@
 if [[ -z "$1" || -z "$2" ]]
 then 
 	echo "PortKnocking Bash Script"
-    	echo "Usage: $0 <IP/Domain> <Port_dst>"
-    	exit
+    echo "Usage: $0 <IP/Domain> <Port_dst>"
+    exit
 fi
 
 if [ "$EUID" -ne 0 ]
