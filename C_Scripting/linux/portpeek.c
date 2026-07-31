@@ -9,10 +9,9 @@
 int main(int argc, char *argv[]){
 	
 	if (argc<3){
-		fprintf(stdout, "=|=|=|=|=|=|=|=|=| PortPeek_v2 |=|=|=|=|=|=|=|=|=\n");
-		fprintf(stdout, "=|=| Usage: %s <IP/Domain> <Port> |=|=\n", argv[0]);
-		fprintf(stdout, "=|=|=| Example: %s example.com 80 |=|=\n", argv[0]);
-		fprintf(stdout, "=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=\n");
+		fprintf(stdout, "=|=|=|=|=|=|=|=|=| PortPeek |=|=|=|=|=|=|=|=|=\n");
+		fprintf(stdout, "Usage: %s <IP/Domain> <Port>\n", argv[0]);
+		fprintf(stdout, "Example: %s example.com 80\n", argv[0]);
 		return 1;
 	}
 	
