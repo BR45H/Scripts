@@ -1,6 +1,9 @@
 #!/bin/bash
 
-if [[ -z "$1" || -z "$2" ]]
+target="$1"
+wordlist="$2"
+
+if [[ -z "$target" || -z "$wordlist" ]]
 then
     echo "Usage: $0 <Domain> <Wordlist>"
     exit
@@ -11,9 +14,6 @@ then
     echo "Wordlist not found: $wordlist"
     exit
 fi
-
-target="$1"
-wordlist="$2"
 
 while IFS= read -r path; do
     [[ -z "$path" ]] && continue
