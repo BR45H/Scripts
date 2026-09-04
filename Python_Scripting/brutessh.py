@@ -9,7 +9,6 @@ username = sys.argv[2]
 ip_address = socket.gethostbyname(sys.argv[1])
 
 client = paramiko.SSHClient()
-client.load_host_keys("~/.ssh/know_hosts")
 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
 with Path(sys.argv[3]).open(mode="r", encoding="utf-8") as file:
