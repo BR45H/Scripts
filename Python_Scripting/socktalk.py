@@ -18,7 +18,7 @@ if resp != 0:
 
 print("Connected...")
 
-mysocket.settimeout(1)
+mysocket.settimeout(3)
 banner = None
 try:
     banner = mysocket.recv(1024)
